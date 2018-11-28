@@ -1,0 +1,209 @@
+.calc-wrapper{
+    max-width:1200px;
+}
+.calc-wrapper form {
+    display: flex;
+    font-size: 16px !important;
+    font-family: 'ProximaNova' !important;
+    line-height: 1.55 !important;
+}
+
+.calc-wrapper label {
+    background: #EBEEF1;
+    font-size: 13px;
+    margin: 15px 15px -15px 0;
+    padding:10px;
+    color: #757575;
+}
+
+.ideaProc {
+    color: #2163B4;
+}
+
+.scale {
+    width: 90px;
+    height: 10px;
+    background: #2163B4;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.income {
+    font-size: 36px;
+}
+
+.predict {
+    font-size: 20px;
+}
+.ideaName {
+    width:150px;
+}
+.greyText {
+    color: #B5B6B7;
+}
+
+.scaleBank {
+    width: 300px;
+    background-color: #B5B6B7;
+}
+
+.scaleBankZero {
+    width: 0;
+    background-color: #B5B6B7;
+}
+
+.scaleKbZero {
+    width: 0;
+}
+
+.scaleIpoZero {
+    width: 0;
+}
+
+.scaleAlterZero {
+    width: 0;
+}
+
+.scaleKbEz {
+    width: 250px;
+}
+
+.scaleIpoEz {
+    width: 70px;
+}
+
+.scaleAlterEz {
+    width: 30px;
+}
+
+.scaleKbNorm {
+    width: 150px;
+}
+
+.scaleIpoNorm {
+    width: 90px;
+}
+
+.scaleAlterNorm {
+    width: 65px;
+}
+
+.scaleAlterHigh {
+    width: 140px;
+}
+
+.calc-wrapper form section {
+    display: flex;
+    flex-direction: column;
+
+}
+.btn-calc{
+    color:#ffffff!important;
+    background-color:#2163B4;
+    text-decoration: none!important;
+    width:215px;
+    height:40px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    transition: background 0.2s ease-in;
+    margin-left:100px;
+}
+.btn-calc:hover{
+    background-color:#1B5296;
+}
+.right-side {
+    display: flex;
+    flex-direction: column
+}
+
+.right-side section {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    margin:0 0 20px 100px;
+}
+
+input {
+    margin: 15px 15px 0 0;
+    outline: none;
+    height: 1px;
+    width: 330px;
+    border: none;
+    background: #EBEEF1;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.range-container {
+    position: relative;
+    width: 350px; /*input range width*/
+    height: 27px; /*input range height*/
+    overflow: hidden;
+    background: #EBEEF1;
+}
+
+input[type='range'] {
+    position: absolute;
+    width: 350px;
+    height: 9px;
+    -webkit-appearance: none;
+    background: #2163B4; /* Old browsers */
+    top: 3px;
+    left: -2px;
+    padding:0!important;
+
+}
+
+.colorRange input[type='range'] {
+    position: absolute;
+    width: 350px;
+    height: 9px;
+    -webkit-appearance: none;
+    background: #2163B4; /* Old browsers */
+    background: -moz-linear-gradient(left, #29b550 0%, #73b836 28%, #c9b919 44%, #b62c20 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #29b550 0%, #73b836 28%, #c9b919 44%, #b62c20 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #29b550 0%, #73b836 28%, #c9b919 44%, #b62c20 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#29b550', endColorstr='#b62c20', GradientType=1) !important; /* IE6-9 */
+    top: 3px;
+    left: -2px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: 1px;
+    padding:0!important;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 19px;
+    -webkit-appearance: none;
+    height: 20px;
+    cursor: ew-resize;
+    background-image:url("arrow.svg");
+    margin-top:-10px;
+    box-shadow: 200px 20px 0 200px rgba(235, 238, 241, 1);
+    padding:0!important;
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: #43e5f7;
+
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: #9a905d;
+}
+
+input[type="range"]::-ms-fill-lower {
+    background-color: #43e5f7;
+}
+
+input[type="range"]::-ms-fill-upper {
+    background-color: #9a905d;
+}
+

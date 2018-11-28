@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calc-wrapper">
+    <form>
+        <section>
+            <label for="summ">Начальный депозит</label>
+            <input type="text" title="" id="summ" value="5000">
+            <div class="range-container">
+                <input type="range" id="summVal" min="0" max="100000" step="1000" value="5000" title="">
+            </div>
+            <label for="month">Срок инвестиции</label>
+            <input type="text" id="month" value="12" title="">
+            <div class="range-container">
+                <input type="range" id="monthVal" min="1" max="36" step="1" value="12" title="Месяц">
+            </div>
+            <label for="risc">Ожидаемый риск</label>
+            <input type="text" id="risc" value="1" title="">
+            <div class="range-container colorRange">
+                <input type="range" id="riscVal" min="0" max="4" step="1" value="1" title="">
+            </div>
+        </section>
+        <section>
+            <div class="right-side">
+                <section>
+                    <div class="ideaName greyText"><p>Банк.Депозит</p></div>
+                    <div class="scale scaleBank" id="bankScale"></div>
+                    <div class="ideaProc" id="bankProc"><p class="greyText">0%</p></div>
+                </section>
+
+                <section>
+                    <div class="ideaName"><p>Kvadrat&#160Black</p></div>
+                    <div class="scale scaleKb" id="kbScale"></div>
+                    <div class="ideaProc" id="kbProc"><p>0%</p></div>
+                </section>
+
+                <section>
+                    <div class="ideaName"><p>IPO</p></div>
+                    <div class="scale scaleIpo" id="ipoScale"></div>
+                    <div class="ideaProc" id="ipoProc"><p>0%</p></div>
+                </section>
+
+                <section>
+                    <div class="ideaName"><p>Alternative</p></div>
+                    <div class="scale scaleAlter" id="alterScale"></div>
+                    <div class="ideaProc" id="alterProc"><p>0%</p></div>
+                </section>
+
+                <section>
+                    <div>
+                        <p class="predict">Ожидаемый доход:</p>
+                        <p id="marge" class="income"></p>
+                    </div>
+                </section>
+
+            </div>
+            <a href="#" class="btn-calc">Открыть счет</a>
+
+        </section>
+    </form>
+</div>
+<script src="script.js">
+
+
+
+</script>
+</body>
+</html>
